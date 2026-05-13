@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>AI To-Do Planner</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,13 +22,35 @@
 
     <h1>AI TO-DO PLANNER</h1>
 
-    <input type="text" id="taskTitle" placeholder="Enter task">
+    <h2 id="motivation"></h2>
 
-    <textarea id="taskDesc" placeholder="Task description"></textarea>
+    <p class="subtitle">
+      Organize smarter with AI-powered productivity ✨
+    </p>
+
+    <input
+      type="text"
+      id="taskTitle"
+      placeholder="Enter your task"
+    >
+
+    <textarea
+      id="taskDesc"
+      placeholder="Task description"
+    ></textarea>
 
     <input type="date" id="taskDate">
 
-    <button onclick="addTask()">Add Task</button>
+    <button onclick="addTask()">
+      Add Task
+    </button>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search tasks..."
+      onkeyup="searchTasks()"
+    >
 
     <div id="taskList"></div>
 
@@ -29,4 +59,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
