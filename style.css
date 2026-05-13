@@ -33,3 +33,19 @@ button {
   padding: 10px;
   border-radius: 10px;
 }
+.high {
+  border-left: 6px solid red;
+}
+
+.medium {
+  border-left: 6px solid orange;
+}
+
+.low {
+  border-left: 6px solid green;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
